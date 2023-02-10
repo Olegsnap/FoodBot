@@ -31,7 +31,7 @@ async def cmd_start(message: types.Message):
         keyboard=kb,
         resize_keyboard=True,
     )
-    await message.answer('Чего желаете', reply_markup=keyboard)
+    await message.answer('Чего желаете?', reply_markup=keyboard)
 
 
 @dp.message(commands=['done'])
